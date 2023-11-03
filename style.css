@@ -1,0 +1,487 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 10px;
+  font-weight: normal;
+}
+body {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  /* width: 100%; */
+}
+#container {
+  width: 156rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* background-color: brown; */
+}
+/* sus-mainTextBox */
+.sus-mainTextBox {
+  margin: 0 auto;
+  width: 76rem;
+  height: 36.5rem;
+  text-align: center;
+  position: relative;
+}
+.sus-topText {
+  font-size: 1.4rem;
+}
+.sus-title {
+  font-size: 6rem;
+  font-weight: bold;
+  margin-top: 4rem;
+  margin-bottom: 2.5rem;
+}
+.sus-subTitle {
+  font-size: 2rem;
+}
+.sus-lotText {
+  font-size: 1.5rem;
+  color: #1b1b1b;
+  width: 89%;
+  margin: 0 auto;
+  padding-top: 3rem;
+}
+.sus-btnBox {
+  width: 76rem;
+  height: 4.5rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+}
+.mainBtn {
+  background: #000;
+  color: #fff;
+  width: 24rem;
+  height: 100%;
+  font-size: 1.3rem;
+  outline: none;
+  border: none;
+}
+.sus-line1 {
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+  border: none;
+  margin: 8rem 0 12rem;
+}
+
+/* sus-primaryGoal */
+.sus-primaryGoal {
+  width: 100%;
+  height: 75.3rem;
+  padding: 0 15rem;
+  display: flex;
+  justify-content: space-between;
+}
+.primary-Textarea {
+  width: 54.5rem;
+  height: 100%;
+}
+.pri-smallTitle {
+  font-size: 1.5rem;
+  padding: 1.5rem 0;
+  display: block;
+}
+.smallTxt {
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+.descBox {
+  font-size: 3rem;
+}
+.pri-desc {
+  margin-top: 10rem;
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+  color: #1b1b1b;
+}
+.priImg {
+  /* width: 56.5rem; */
+  width: 44.8%;
+  height: 100%;
+  object-fit: contain;
+}
+#line2 {
+  margin: 7rem 0;
+}
+
+/* sus-elements */
+.sus-elements {
+  width: 100%;
+  height: 87.9rem;
+  position: relative;
+  padding: 0 2rem;
+}
+.ele-FlexBox {
+  width: 100%;
+  height: 58.8rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-bottom: 4rem;
+}
+.ele-FlexItem {
+  width: 36rem;
+  position: relative;
+}
+.ele-itemImg {
+  width: 100%;
+  height: 48rem;
+  object-fit: contain;
+}
+.ele-itemTitle {
+  font-size: 1.3rem;
+  margin: 1.5rem 0;
+}
+.ele-itemTxt {
+  font-size: 1.2rem;
+  letter-spacing: 0.15rem;
+}
+.sus-More {
+  font-size: 1.2rem;
+  text-decoration: underline;
+  position: absolute;
+  bottom: 0;
+}
+.ele-desc {
+  width: 128rem;
+  margin: 0 auto;
+  font-size: 4rem;
+  text-align: center;
+  letter-spacing: 0.4rem;
+}
+.ele-director {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.4rem;
+}
+#line3 {
+  margin-top: 1rem;
+}
+
+/* sus-product */
+.sus-product {
+  width: 100%;
+  height: 100rem;
+  text-align: center;
+  position: relative;
+}
+.productTitle {
+  font-size: 4rem;
+}
+.productSubTitle {
+  font-size: 1.5rem;
+  margin: 3rem 0 3.5rem;
+}
+.productBtn {
+  width: 24rem;
+  height: 4.5rem;
+  background: #000;
+  color: #fff;
+  border: none;
+}
+.productFlexBox {
+  width: 100%;
+  padding: 0 1rem;
+  height: 77.8rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+}
+.productItem {
+  width: 50rem;
+  height: 100%;
+  text-align: left;
+}
+.productItemImg {
+  width: 100%;
+  height: 66.6rem;
+  object-fit: contain;
+}
+.sus-itemtitle {
+  font-size: 1.3rem;
+  margin: 1rem 0;
+}
+.sus-itemTxt {
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+}
+.sus-More2 {
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+  text-decoration: underline;
+  position: absolute;
+  bottom: 0;
+}
+#susMoreSpace {
+  /*수정하기*/
+  padding-left: 1.5rem;
+}
+#line5 {
+  margin: 7rem 0;
+}
+/* sus-environment */
+.sus-environment {
+  width: 100%;
+  height: 109.2rem;
+  padding: 0 14rem;
+  text-align: center;
+}
+.env-FlexBox {
+  margin-top: 6rem;
+  width: 100%;
+  height: 85.4rem;
+  display: flex;
+  justify-content: center;
+  gap: 15rem;
+}
+.env-img {
+  width: 100%;
+  height: 75.3rem;
+  object-fit: contain;
+}
+.env-item {
+  width: 56.5rem;
+  height: 100%;
+  text-align: left;
+  position: relative;
+  letter-spacing: 0.1rem;
+}
+.env-item > .sus-itemTxt {
+  font-size: 1.2rem;
+}
+#line6 {
+  margin: 8rem 0;
+}
+
+/* sus-sloganBox */
+.sus-sloganBox {
+  width: 100%;
+  height: 19rem;
+  position: relative;
+  text-align: center;
+}
+.sus-slogan {
+  font-size: 3rem;
+}
+.sus-txt {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 4.5rem;
+  letter-spacing: 0.1rem;
+}
+#line7 {
+  margin: 13rem 0 5rem;
+}
+/* -------------- @media-------------- */
+@media screen and (max-width: 1560px) {
+  html,
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 9.2px;
+  }
+  #container {
+    width: 100vw;
+    background-color: aquamarine;
+  }
+}
+@media screen and (max-width: 1420px) {
+  html,
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 1330px) {
+  html,
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 8.5px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  html,
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 7.7px;
+  }
+  #container {
+    background: dodgerblue;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  html,
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 7px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  html,
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 6.2px;
+  }
+  #container {
+    background: beige;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  /*Goal part 변화*/
+  .sus-primaryGoal {
+    height: auto;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+  .primary-Textarea {
+    width: 50%;
+  }
+  .priImg {
+    width: 50%;
+    /* object-fit: cover; */
+  }
+}
+
+@media screen and (max-width: 900px) {
+  html,
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 5.4px;
+  }
+  #container {
+    background: pink;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /*Goal reverse*/
+  html,
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 5px;
+  }
+  #container {
+    background: pink;
+  }
+  .sus-primaryGoal {
+    height: auto;
+    flex-direction: column-reverse;
+    gap: 2rem;
+    align-items: center;
+  }
+  .primary-Textarea {
+    width: 95vw;
+  }
+  .pri-smallTitle {
+    font-size: 3rem;
+  }
+  .smallTxt {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+  }
+  .priImg {
+    width: 95vw;
+  }
+  .pri-desc {
+    font-size: 4rem;
+  }
+
+  /*element grid하기*/
+  .sus-elements {
+    width: 100%;
+    /* height: 87.9rem; */
+    height: auto;
+    position: relative;
+    padding: 0 2rem;
+  }
+  .ele-FlexBox {
+    width: 100%;
+    height: 58.8rem;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* gap:1.2rem; */
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    grid-gap: 1.2rem;
+    margin-bottom: 4rem;
+  }
+  .ele-FlexItem {
+    /*여기 고치는중이었음*/
+    width: 36rem;
+    position: relative;
+  }
+  .ele-itemImg {
+    width: 100%;
+    height: 48rem;
+    object-fit: contain;
+  }
+}
