@@ -1,3 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap");
+@font-face {
+  font-family: "Suisselnti";
+  src: url(./SuisseIntl-Regular.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +18,8 @@ h5,
 h6 {
   font-size: 10px;
   font-weight: normal;
+  font-family: "Suisselnti";
+  /* font-family: 'Noto Sans KR', sans-serif; */
 }
 body {
   display: flex;
@@ -193,6 +200,7 @@ body {
 .productBtn {
   width: 24rem;
   height: 4.5rem;
+  font-size: 1.3rem;
   background: #000;
   color: #fff;
   border: none;
@@ -412,8 +420,105 @@ body {
   h6 {
     font-size: 5.4px;
   }
-  #container {
-    background: pink;
+  .sus-mainTextBox {
+    width: 90%;
+    height: auto;
+  }
+  .sus-topText {
+    font-size: 1.4rem;
+  }
+  .sus-title {
+    font-size: 8rem;
+  }
+  .sus-subTitle {
+    font-size: 3rem;
+  }
+  .sus-lotText {
+    font-size: 2.5rem;
+  }
+  .sus-btnBox {
+    width: auto;
+    height: auto;
+    justify-content: center;
+    gap: 4rem;
+    position: relative;
+    margin-top: 4rem;
+    bottom: 0;
+  }
+  .mainBtn {
+    font-size: 2rem;
+    width: 28rem;
+    height: 6rem;
+  }
+  .pri-smallTitle,
+  .smallTxt {
+    font-size: 2.5rem;
+  }
+  .ele-FlexBox {
+    height: auto;
+  }
+  .ele-itemTitle {
+    font-size: 2.5rem;
+  }
+  .ele-itemTxt {
+    font-size: 2rem;
+    padding: 2rem 0;
+  }
+  .sus-More {
+    font-size: 2rem;
+    position: relative;
+  }
+  .ele-FlexBox > .ele-FlexItem:nth-of-type(4) > .sus-More {
+    position: absolute;
+    bottom: 0;
+  }
+  #line3 {
+    margin: 12rem 0;
+  }
+  .sus-product {
+    margin-top: -6rem;
+  }
+  .productTitle {
+    font-size: 6rem;
+  }
+  .productSubTitle {
+    font-size: 2.5rem;
+  }
+  .productFlexBox {
+    position: relative;
+    margin-top: 4rem;
+    height: auto;
+  }
+  .productBtn {
+    width: 28rem;
+    height: 5.5rem;
+    font-size: 1.8rem;
+  }
+  .sus-itemtitle {
+    font-size: 2.5rem;
+  }
+  .sus-itemTxt {
+    font-size: 2rem;
+    padding: 2rem 0;
+  }
+  .sus-More2 {
+    font-size: 2rem;
+    position: relative;
+  }
+  #line4 {
+    margin-top: 18rem;
+    margin-bottom: 13rem;
+  }
+  #line5 {
+    margin-top: 18rem;
+    margin-bottom: 0;
+  }
+  .sus-line1 {
+    margin-bottom: 4rem;
+  }
+  .sus-environment {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
   }
 }
 
@@ -429,8 +534,40 @@ body {
   h6 {
     font-size: 5px;
   }
-  #container {
-    background: pink;
+  .sus-mainTextBox {
+    width: 100%;
+    height: auto;
+  }
+  .sus-topText {
+    font-size: 2rem;
+  }
+  .sus-title {
+    font-size: 6.5rem;
+    padding-bottom: 2rem;
+  }
+  .sus-subTitle {
+    font-size: 3.2rem;
+  }
+  .sus-lotText {
+    font-size: 2.5rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    word-break: keep-all;
+  }
+  .sus-btnBox {
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .mainBtn {
+    width: 40rem;
+    height: 7rem;
+    font-size: 2.5rem;
   }
   .sus-primaryGoal {
     height: auto;
@@ -454,34 +591,147 @@ body {
   .pri-desc {
     font-size: 4rem;
   }
-
-  /*element grid하기*/
   .sus-elements {
-    width: 100%;
-    /* height: 87.9rem; */
+    width: 95%;
+    margin: 0 auto 12rem;
     height: auto;
     position: relative;
     padding: 0 2rem;
   }
   .ele-FlexBox {
     width: 100%;
-    height: 58.8rem;
-    /* display: flex; */
-    /* justify-content: center; */
-    /* gap:1.2rem; */
+    height: auto;
     display: grid;
     grid-template: 1fr 1fr / 1fr 1fr;
     grid-gap: 1.2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 15rem;
   }
   .ele-FlexItem {
-    /*여기 고치는중이었음*/
-    width: 36rem;
+    width: 100%;
+    height: 100%;
     position: relative;
   }
   .ele-itemImg {
     width: 100%;
-    height: 48rem;
+    height: auto;
     object-fit: contain;
+  }
+  .ele-itemTitle {
+    font-size: 2.5rem;
+  }
+  .ele-itemTxt {
+    font-size: 2rem;
+    margin: 2rem 0 5rem;
+  }
+  .sus-More {
+    font-size: 2rem;
+  }
+  .ele-director {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .ele-desc {
+    width: 100%;
+    padding: 0 3rem;
+    word-break: keep-all;
+  }
+  #line3 {
+    margin-bottom: 4rem;
+  }
+  .sus-product {
+    height: auto;
+  }
+  .productTitle {
+    font-size: 5rem;
+  }
+  .productSubTitle {
+    font-size: 2.5rem;
+    word-break: keep-all;
+  }
+  .productBtn {
+    width: 28rem;
+    height: 6rem;
+    font-size: 2rem;
+  }
+  .productFlexBox {
+    padding: 0;
+    flex-direction: column;
+    gap: 8rem;
+    width: 90%;
+    height: auto;
+    position: relative;
+    margin: 5rem auto;
+  }
+  .productItem {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .productItemImg {
+    height: auto;
+  }
+  .sus-itemtitle {
+    font-size: 3rem;
+    margin: 1rem 0 0;
+  }
+  .sus-itemTxt {
+    font-size: 2.3rem;
+    letter-spacing: 0.1rem;
+    margin: 2rem 0 6rem;
+  }
+  .sus-More,
+  .sus-More2 {
+    font-size: 2.3rem;
+  }
+  #line4 {
+    margin: 6rem 0 4rem;
+  }
+  .sus-environment {
+    padding: 0;
+    height: auto;
+  }
+  .env-FlexBox {
+    width: 90%;
+    height: auto;
+    margin: 4rem auto 0;
+    flex-direction: column;
+    gap: 8rem;
+  }
+  .env-img {
+    height: auto;
+  }
+  .env-item {
+    width: 100%;
+    height: auto;
+  }
+  .env-item > .sus-itemTxt {
+    font-size: 2rem;
+  }
+
+  .sus-sloganBox {
+    height: auto;
+  }
+  .sus-slogan {
+    padding: 0 2rem;
+    font-size: 4rem;
+    word-break: keep-all;
+    margin-bottom: 4rem;
+  }
+  .sus-txt {
+    width: 100%;
+    display: block;
+    font-size: 2.5rem;
+    display: block;
+    position: relative;
+    bottom: 0;
+    margin: 4rem 0;
+  }
+  .sus-sloganBox > .sus-btnBox {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+  }
+  #line7 {
+    margin-top: 8rem;
   }
 }
