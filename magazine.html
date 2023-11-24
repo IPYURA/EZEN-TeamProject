@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>매거진</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <script
+      defer
+      src="https://kit.fontawesome.com/ac2bfd23d9.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom -->
+    <link rel="stylesheet" href="./magazine.css" />
+    <script defer src="./header_footer.js"></script>
+  </head>
+  <body>
+    <!-- 로그인 창 -->
+    <section id="login-modal">
+      <section id="login-container">
+        <!-- 로그인/ 회원가입 -->
+        <div class="login-close">
+          <div id="login-closebtn">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="login-signup">
+          <a href="#">로그인</a>
+          <a href="./login.html">회원가입</a>
+        </div>
+        <!-- id pw 창 -->
+        <div id="login-idpw">
+          <label for="">아이디 또는 이메일</label>
+          <input type="email text" />
+          <label for="">비밀번호</label>
+          <input type="password" />
+        </div>
+        <!-- 로그인 버튼 -->
+        <a href="#" id="signin">로그인</a>
+        <!-- 찾기 창 -->
+        <div id="idpw-find">
+          <ul>
+            <li>
+              <a href="#">아이디 찾기</a>
+            </li>
+            <li>
+              <a href="#">비밀번호 찾기</a>
+            </li>
+          </ul>
+        </div>
+        <!-- sns 로그인 창 -->
+        <section id="login-sns">
+          <div class="login-snstxt">
+            <p>SNS 계정을 연동해 간편하게 로그인해보세요</p>
+          </div>
+          <div class="login-sns">
+            <ul>
+              <li>
+                <a href="#">
+                  <div class="login-snsname">
+                    <span class="login-iconBox">
+                      <img
+                        src="https://image.thehyundai.com/cos/hyundai/2020/8/sns/KR_Talk.svg"
+                        alt="kakao"
+                      />
+                    </span>
+                    <span>카카오톡</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="login-snsname">
+                    <span class="login-iconBox">
+                      <img
+                        src="https://image.thehyundai.com/cos/hyundai/2020/8/sns/KR_N.svg"
+                        alt=""
+                      />
+                    </span>
+                    <span>네이버</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+
+            <ul>
+              <li>
+                <a href="#">
+                  <div class="login-snsname">
+                    <span class="login-iconBox">
+                      <img
+                        src="https://image.thehyundai.com/cos/hyundai/2020/8/sns/KR_Google.svg"
+                        alt=""
+                      />
+                    </span>
+                    <span>구글</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="login-snsname">
+                    <span class="login-iconBox">
+                      <img
+                        src="https://image.thehyundai.com/cos/hyundai/2020/8/sns/KR_FB.svg"
+                        alt=""
+                      />
+                    </span>
+                    <span>페이스북</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- cos txt -->
+          <div class="login-snstxt login-costxt">
+            <p>
+              COS 온라인 스토어는 더현대닷컴이 운영·제공하는 사이트로 기존
+              회원은 더현대닷컴 아이디와 비밀번호로 바로 이용 가능합니다.
+            </p>
+          </div>
+          <!-- 비회원주문 -->
+          <div class="login-none">
+            <ul>
+              <li>
+                <a href="#">비회원주문조회</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </section>
+    </section>
+    <!-- 모바일네비 -->
+    <section class="mobile-menu-wrapper">
+      <!-- 모바일메뉴 메인페이지 상단-->
+      <div class="mobile-menu">
+        <div class="mobile-menu-inner">
+          <ul class="first">
+            <li>
+              <a data-url="depth1">
+                <h2 class="title">여성</h2>
+                <i class="fas fa-angle-right"></i>
+              </a>
+            </li>
+            <li>
+              <a data-url="depth2">
+                <h2 class="title">남성</h2>
+                <i class="fas fa-angle-right"></i>
+              </a>
+            </li>
+            <li>
+              <a href="./atelier.html" data-url="depth3">
+                <h2 class="title">COS 아틀리에</h2>
+                <i class="fas fa-angle-right"></i>
+              </a>
+            </li>
+            <li>
+              <a href="./sustain.html" data-url="depth4">
+                <h2 class="title">지속가능성</h2>
+                <i class="fas fa-angle-right"></i>
+              </a>
+            </li>
+            <li>
+              <a href="./magazine.html" data-url="depth5">
+                <h2 class="title">매거진</h2>
+                <i class="fas fa-angle-right"></i>
+              </a>
+            </li>
+          </ul>
+          <!-- 모바일메뉴 메인페이지 하단-->
+          <ul class="under">
+            <li>
+              <a href="./map.html" target="_self" class="a-link">
+                <span class="sub-icon">
+                  <img
+                    src="https://image.thehyundai.com/cos_cdn/icon/location.svg"
+                /></span>
+                <span class="sub-title">매장 찾기</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="/ko-kr/customer-service.html"
+                target="_self"
+                class="a-link"
+              >
+                <span class="sub-icon">
+                  <img src="https://image.thehyundai.com/cos_cdn/icon/cs.svg" />
+                </span>
+                <span class="sub-title">고객 서비스</span>
+              </a>
+            </li>
+            <li class="sign-in-section js-login-area" id="loginOutMobileId">
+              <a
+                href="./login.html"
+                target="_self"
+                class="a-link sign-in menu-link open-lightbox"
+                onclick="setGnbLoginForHead()"
+              >
+                <span class="sub-icon">
+                  <img
+                    src="https://image.thehyundai.com/cos_cdn/icon/signin.svg"
+                  />
+                </span>
+                <span class="sub-title">로그인</span>
+              </a>
+              <a
+                href="javascript:;"
+                target="_self"
+                class="a-link sign-in menu-link open-lightbox"
+                id="hidLoginOpen"
+                data-template="sign-in"
+                data-classes="is-medium"
+                style="display: none"
+              >
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="a-link shipping"
+                onclick="HUtil.createCountrySelector();"
+              >
+                <span class="sub-icon">
+                  <img
+                    src="https://image.thehyundai.com/cos_cdn/icon/country.svg"
+                  />
+                </span>
+                <span class="sub-title">배송국가: 대한민국</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="background-close">
+        <div class="background-close-btn">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </section>
+    <!-- 네비 -->
+    <section id="top-nav-warp">
+      <nav id="top-nav">
+        <!-- 네비 상단 공지문 -->
+        <article class="top-nav-txt">
+          <p style="color: #ffffff">
+            강서경 작가와 협업한 컬렉션을 소개합니다 |
+            <a style="border-bottom: 0.5px solid white; color: white" href="#"
+              >컬렉션 보러가기</a
+            >
+          </p>
+        </article>
+        <!-- 네비 카테고리 -->
+        <article class="top-nav-category">
+          <div class="top-nav-container">
+            <div class="top-nav-container-items">
+              <div class="top-nav-inner">
+                <div class="nav-mobileicons">
+                  <!-- 모바일 네비 -->
+                  <a class="nav-mobiletrigger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </a>
+
+                  <a class="nav-mobilesearch" href="#"
+                    ><i class="fab fa-sistrix"></i
+                  ></a>
+                </div>
+                <!-- cos-로고 -->
+                <div class="nav-logo">
+                  <a href="./magazine.html">
+                    <svg
+                      width="74px"
+                      height="22px"
+                      viewBox="0 0 235 83"
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <title>FINAL-Logo-RGB</title>
+                      <defs>
+                        <polygon
+                          id="path-1"
+                          points="0 0.005 234.44 0.005 234.44 82.94 0 82.94"
+                        ></polygon>
+                      </defs>
+                      <g
+                        id="FINAL-Logo-RGB"
+                        stroke="none"
+                        stroke-width="1"
+                        fill="none"
+                        fill-rule="evenodd"
+                      >
+                        <mask id="mask-2" fill="white">
+                          <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Clip-2"></g>
+                        <path
+                          d="M184.288,62.013 L176.346,71.261 C183.696,79.323 194.129,83 205.036,83 C220.45,83 234.44,73.394 234.44,58.813 C234.44,31.542 190.097,38.539 190.097,21.821 C190.097,15.062 196.738,11.862 205.154,11.862 C212.152,11.862 219.029,15.062 223.771,18.739 L230.053,9.015 C222.941,3.207 214.048,0.005 204.919,0.005 C191.639,0.005 178.004,7.829 178.004,22.056 C178.004,49.328 222.347,42.451 222.347,58.813 C222.347,67.347 213.692,71.142 205.036,71.142 C197.212,71.142 188.913,66.638 184.288,62.013"
+                          id="Fill-1"
+                          fill="#1B1B1B"
+                          mask="url(#mask-2)"
+                        ></path>
+                        <path
+                          d="M123.666,71.142 C139.79,71.142 152.951,57.389 152.951,41.502 C152.951,25.496 139.79,11.86 123.666,11.86 C107.543,11.86 94.143,25.496 94.143,41.502 C94.143,57.389 107.543,71.142 123.666,71.142 M123.549,0.005 C146.549,0.005 165.045,18.619 165.045,41.502 C165.045,64.384 146.549,83 123.549,83 C100.666,83 82.049,64.384 82.049,41.502 C82.049,18.619 100.666,0.005 123.549,0.005"
+                          id="Fill-3"
+                          fill="#1B1B1B"
+                          mask="url(#mask-2)"
+                        ></path>
+                        <path
+                          d="M72.916,13.877 C65.327,5.221 54.184,0.005 41.496,0.005 C18.496,0.005 0,18.381 0,41.502 C0,64.622 18.496,82.998 41.496,82.998 C54.42,82.998 65.683,77.546 73.272,68.77 L64.143,60.946 C58.806,67.23 50.746,71.142 41.496,71.142 C25.491,71.142 12.093,57.508 12.093,41.502 C12.093,25.496 25.491,11.86 41.496,11.86 C50.746,11.86 58.57,15.892 64.143,22.176 L72.916,13.877"
+                          id="Fill-4"
+                          fill="#1B1B1B"
+                          mask="url(#mask-2)"
+                        ></path>
+                      </g>
+                    </svg>
+                  </a>
+                </div>
+                <!-- 네비 카테고리 -->
+                <div class="nav-list">
+                  <a href="#">여성 </a>
+                  <a href="#">남성</a>
+                  <a href="./atelier.html">COS아틀리에</a>
+                  <a href="./sustain.html">지속가능성</a>
+                  <a href="./magazine.html">매거진</a>
+                </div>
+                <!-- 네비 -->
+                <div class="nav-icon">
+                  <i class="fa-solid fa-magnifying-glass nav-search-icon"></i>
+                  <a class="nav-search-txt" href="#">검색</a>
+                  <a class="nav-login-icon" href="#">로그인</a>
+                  <a class="korea" href="#">배송국가: 대한민국</a>
+                </div>
+                <!-- 장바구니 -->
+                <div class="nav-bag">
+                  <a href="#" class="nav-heart">
+                    <img src="./img/heart.png" alt="" />
+                  </a>
+                  <a href="#" class="nav-shopping-bag">
+                    <img src="./img/shopping-bag.png" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </nav>
+    </section>
+    <!-- 오픈네비시작 -->
+    <div id="categoryFrame">
+      <div class="category-wrapper">
+        <!-- categories(여성) -->
+        <div data-value="Women" class="categories">
+          <div class="nav-category-listinner">
+            <div class="nav-category-listitems">
+              <div class="nav-category-list">
+                <a href="#" target="_self" class="a-link">
+                  신상품 <span></span>
+                </a>
+                <a href="#" target="_self" class="a-link">
+                  트렌딩 나우 <span></span>
+                </a>
+                <a href="#" target="_self" class="a-link">
+                  COS x Suki Seokyeong Kang <span></span>
+                </a>
+                <a href="#" target="_self" class="a-link">
+                  코트 &amp; 재킷 <span></span>
+                </a>
+                <a href="#" target="_self" class="a-link">
+                  니트웨어 &amp; 가디건 <span></span>
+                </a>
+                <a href="#" target="_self" class="a-link">
+                  트라우저 <span></span>
+                </a>
+                <a href="#" target="_self" class="a-link">
+                  캐시미어 <span></span>
+                </a>
+                <a href="#" target="_self" class="a-link">
+                  드레스 <span></span>
+                </a>
+                <a href="#" target="_self" class="a-link"> 탑 <span></span> </a>
+                <a href="#" target="_self" class="a-link"> 진 <span></span> </a>
+                <a href="#" target="_self" class="a-link">
+                  셔츠 &amp; 블라우스&nbsp; <span></span>
+                </a>
+                <a href="#" target="_self" class="a-link">
+                  티셔츠 <span></span>
+                </a>
+                <a href="#" target="_self" class="a-link">
+                  스커트 <span></span>
+                </a>
+              </div>
+              <div class="nav-category-list">
+                <a href="#" target="_self" class="a-link">
+                  신상품 액세서리 <span></span>
+                </a>
+                <a href="#" target="_self" class="a-link">
+                  퀼티드 백 <span></span>
+                </a>
+                <a href="#" target="_self" class="a-link">
+                  가방 <span></span>
+                </a>
+                <a href="#" target="_self" class="a-link">
+                  슈즈 <span></span>
+                </a>
+                <a href="#" target="_self" class="a-link">
+                  모자, 장갑 &amp; 머플러 <span></span>
+                </a>
+                <a href="#" target="_self" class="a-link">
+                  주얼리 <span></span>
+                </a>
+                <a href="#" target="_self" class="a-link">
+                  양말 <span></span>
+                </a>
+              </div>
+              <div class="nav-category-list">
+                <a href="#" target="_self" class="a-link">
+                  모두 보기 <span></span>
+                </a>
+                <a href="#" target="_self" class="a-link">
+                  COS 아틀리에 <span></span>
+                </a>
+                <a href="#" target="_self" class="a-link">
+                  COS 셀렉션 <span></span>
+                </a>
+                <a href="#" target="_self" class="a-link">
+                  매칭 세트 <span></span>
+                </a>
+                <a href="#" target="_self" class="a-link">
+                  데님 컬렉션 <span></span>
+                </a>
+                <a href="#" target="_self" class="a-link">
+                  온라인 익스클루시브 <span></span>
+                </a>
+                <a href="#" target="_self" class="a-link">
+                  OS by You <span></span>
+                </a>
+              </div>
+            </div>
+            <div class="m-free-tile">
+              <picture>
+                <img
+                  class="a-image"
+                  src="https://image.thehyundai.com/static/image/sect/hnm/cpnt/hnmmain13438215020231027154627.jpg"
+                />
+              </picture>
+              <div class="headline-preamble-wrapper">
+                <p>여성 신상품 보러가기</p>
+              </div>
+              <div class="cta-wrapper"></div>
+            </div>
+          </div>
+        </div>
+        <!-- // categories(여성) -->
+
+        <!-- categories(남성) -->
+        <div data-value="Men" class="categories">
+          <div class="nav-category-listinner">
+            <div class="nav-category-listitems">
+              <div class="nav-category-list">
+                <a href="#" target="_self" class="a-link">
+                  신상품 <span></span>
+                </a>
+                <a href="#" target="_self" class="a-link">
+                  트렌딩 나우 <span></span>
+                </a>
+                <a href="#" target="_self" class="a-link">
+                  COS x Suki Seokyeong Kang <span></span>
+                </a>
+                <a href="#" target="_self" class="a-link">
+                  니트웨어 <span></span>
+                </a>
+                <a href="#" target="_self" class="a-link">
+                  트라우저 <span></span>
+                </a>
+                <a href="#" target="_self" class="a-link">
+                  코트 &amp; 재킷 <span></span>
+                </a>
+                <a href="#" target="_self" class="a-link">
+                  캐시미어 <span></span>
+                </a>
+                <a href="#" target="_self" class="a-link">
+                  셔츠 <span></span>
+                </a>
+                <a href="#" target="_self" class="a-link"> 진 <span></span> </a>
+                <a href="#" target="_self" class="a-link">
+                  폴로 셔츠 <span></span>
+                </a>
+                <a href="#" target="_self" class="a-link">
+                  티셔츠 <span></span>
+                </a>
+                <a href="#" target="_self" class="a-link">
+                  스웻셔츠 <span></span>
+                </a>
+                <a href="#" target="_self" class="a-link">
+                  수트 &amp; 테일러링 <span></span>
+                </a>
+              </div>
+              <div class="nav-category-list">
+                <a href="#" target="_self" class="a-link">
+                  신상품 액세서리 <span></span>
+                </a>
+                <a href="#" target="_self" class="a-link">
+                  모자 &amp; 머플러 <span></span>
+                </a>
+                <a href="#" target="_self" class="a-link">
+                  가방 <span></span>
+                </a>
+                <a href="#" target="_self" class="a-link">
+                  슈즈 <span></span>
+                </a>
+                <a href="#" target="_self" class="a-link">
+                  양말 <span></span>
+                </a>
+                <a href="#" target="_self" class="a-link">
+                  벨트 <span></span>
+                </a>
+              </div>
+              <div class="nav-category-list">
+                <a href="#" target="_self" class="a-link">
+                  모두 보기 <span></span>
+                </a>
+                <a href="#" target="_self" class="a-link">
+                  OS 아틀리에 <span></span>
+                </a>
+                <a href="#" target="_self" class="a-link">
+                  COS 셀렉션 <span></span>
+                </a>
+                <a href="#" target="_self" class="a-link">
+                  온라인 익스클루시브 <span></span>
+                </a>
+                <a href="#" target="_self" class="a-link">
+                  COS by You <span></span>
+                </a>
+              </div>
+            </div>
+            <div class="m-free-tile">
+              <picture>
+                <img
+                  class="a-image"
+                  src="https://image.thehyundai.com/static/image/sect/hnm/cpnt/hnmmain13438315020231027154740.jpg"
+                />
+              </picture>
+              <div class="headline-preamble-wrapper">
+                <p>남성 신상품 보러가기</p>
+              </div>
+              <div class="cta-wrapper"></div>
+            </div>
+          </div>
+        </div>
+        <!-- // categories(남성) -->
+
+        <!-- categories(COS 아틀리에) -->
+        <div data-value="COS" class="categories">
+          <div class="nav-category-listinner">
+            <div class="nav-category-listitems">
+              <div class="nav-category-list">
+                <a href="#" target="_self" class="a-link">
+                  COS 여성 아틀리에
+                  <span></span>
+                </a>
+                <a href="#" target="_self" class="a-link">
+                  COS 남성 아틀리에
+                  <span></span>
+                </a>
+              </div>
+            </div>
+            <div class="m-free-tile">
+              <picture>
+                <img
+                  class="a-image loading"
+                  src="https://image.thehyundai.com/static/image/sect/hnm/cpnt/hnmmain2158930020231025101614.jpg"
+                />
+              </picture>
+              <div class="headline-preamble-wrapper">
+                <p>최상의 퀄리티와 럭셔리한 디자인의 아틀리에 컬렉션</p>
+              </div>
+              <div class="cta-wrapper"></div>
+            </div>
+          </div>
+        </div>
+        <!-- // categories(COS 아틀리에) -->
+        <!-- categories(지속가능성) -->
+        <div data-value="Sustainability" class="categories">
+          <div class="nav-category-listinner">
+            <div class="nav-category-listitems">
+              <div class="nav-category-list">
+                <a href="" target="_self" class="a-link">
+                  브랜드 비전 <span></span>
+                </a>
+                <a href="#" target="_self" class="a-link">
+                  제품 관리 가이드 <span></span>
+                </a>
+              </div>
+            </div>
+            <div class="m-free-tile">
+              <picture>
+                <img
+                  class="a-image loading"
+                  src="https://image.thehyundai.com/static/image/sect/hnm/cpnt/hnmmain1860130020220928093715.jpg"
+                />
+              </picture>
+              <div class="headline-preamble-wrapper">
+                <p>지속가능성에 대한 이야기</p>
+              </div>
+              <div class="cta-wrapper"></div>
+            </div>
+          </div>
+        </div>
+        <!-- // categories(지속가능성) -->
+        <!-- categories(매거진) -->
+        <div data-value="Magazine" class="categories">
+          <div class="nav-category-listinner">
+            <div class="nav-category-listitems">
+              <div class="nav-category-list">
+                <a href="#" target="_self" class="a-link">
+                  최신 <span></span>
+                </a>
+                <a href="#" target="_self" class="a-link">
+                  스토리 <span></span>
+                </a>
+                <a href="#" target="_self" class="a-link">
+                  인터뷰 <span></span>
+                </a>
+                <a href="#" target="_self" class="a-link">
+                  장소 <span></span>
+                </a>
+                <a href="#" target="_self" class="a-link">
+                  영감 <span></span>
+                </a>
+              </div>
+            </div>
+            <div class="m-free-tile">
+              <picture>
+                <img
+                  class="a-image loading"
+                  src="https://image.thehyundai.com/static/image/sect/hnm/cpnt/hnmmain13438514020231031151423.png"
+                />
+              </picture>
+              <div class="headline-preamble-wrapper">
+                <p>새로운 이야기로 돌아온 COS 매거진</p>
+              </div>
+              <div class="cta-wrapper"></div>
+            </div>
+          </div>
+        </div>
+        <!-- // categories(매거진) -->
+      </div>
+    </div>
+    <!-- 오픈네비끝 -->
+    <!-- magazine시작 -->
+    <div class="container">
+      <div class="mz-main">
+        <div class="mz-mainTitle">
+          <h1>COS 매거진</h1>
+        </div>
+        <div class="mz-mainImg">
+          <a href="#"
+            ><img
+              class="mz-mainImg-pc"
+              src="https://image.thehyundai.com/static/image/sect/hnm/cpnt/hnmmain2216130020231027092216.jpg"
+              alt="mz-mainImg-pc"
+          /></a>
+          <a href="#"
+            ><img
+              class="mz-mainImg-mobile"
+              src="https://image.thehyundai.com/static/image/sect/hnm/cpnt/hnmmain2216130020231027092218.jpg"
+              alt="mz-mainImg-mobile"
+          /></a>
+          <div class="mz-mainImg-detail">
+            <a href="#"><h2>2023 겨울 플레이리스트</h2></a>
+            <a href="#"
+              ><p>
+                리틀 드래곤의 차분한 음악부터 제임스 블레이크의 영화 음악까지
+                감상해 보세요.
+              </p></a
+            >
+            <span><a href="#">더보기</a></span>
+          </div>
+        </div>
+      </div>
+      <div class="mz-category">
+        <div class="mz-categoryBox">
+          <p>카테고리</p>
+          <div class="mz-category-btn">
+            <a href="#">인터뷰</a>
+            <a href="#">장소</a>
+            <a href="#">영감</a>
+            <a href="#">스토리</a>
+          </div>
+        </div>
+      </div>
+      <div class="mz-items">
+        <div class="mz-itemBox">
+          <div class="mz-item">
+            <a href="#"
+              ><img
+                src="https://image.thehyundai.com/static/image/sect/hnm/cpnt/hnmmain2216132020231027092523.jpg"
+                alt="mz-img2"
+            /></a>
+            <div class="mz-itemTxt">
+              <a href="#"><h1>다시 정의하는 배우의 역할</h1></a>
+              <a href="#"
+                ><p>
+                  배우이자 모델 하바나 로즈 리우가 고정관념에 도전하며
+                  모순속에서 아름다움을 찾는 것에 대한 의견을 말합니다.
+                </p></a
+              >
+              <a href="#" class="mz-etc-a">더 보기</a>
+            </div>
+          </div>
+          <div class="mz-item">
+            <a href="#"
+              ><img
+                src="https://image.thehyundai.com/static/image/sect/hnm/cpnt/hnmmain2216131020231027092505.jpg"
+                alt="mz-img1"
+            /></a>
+            <div class="mz-itemTxt">
+              <a href="#"><h1>남성 아우터웨어 컬렉션</h1></a>
+              <a href="#"
+                ><p>
+                  남성 아우터웨어 컬렉션과 함께 새로운 계절을 맞이해 보세요.
+                </p></a
+              >
+              <a href="#" class="mz-etc-a">더 보기</a>
+            </div>
+          </div>
+          <div class="mz-item">
+            <a href="#"
+              ><img
+                src="https://image.thehyundai.com/static/image/sect/hnm/cpnt/hnmmain2216134020231027132124.jpg"
+                alt="mz-img4"
+            /></a>
+            <div class="mz-itemTxt">
+              <a href="#"><h1>커티스 하딩의 가스펠 음악</h1></a>
+              <a href="#"
+                ><p>
+                  애틀랜타 힙합 씬에서 자신만의 목소리를 찾고 가스펠 음악을
+                  접하며 성장한 싱어송라이터.
+                </p></a
+              >
+              <a href="#" class="mz-etc-a">더 보기</a>
+            </div>
+          </div>
+          <div class="mz-item">
+            <a href="#"
+              ><img
+                src="https://image.thehyundai.com/static/image/sect/hnm/cpnt/hnmmain2216133020231027092539.jpg"
+                alt="mz-img3"
+            /></a>
+            <div class="mz-itemTxt">
+              <a href="#"><h1>연약함의 새로운 의미</h1></a>
+              <a href="#"
+                ><p>
+                  자신만의 음악의 의미를 찾고 연약함을 받아들이는 싱어송라이터
+                </p></a
+              >
+              <a href="#" class="mz-etc-a">더 보기</a>
+            </div>
+          </div>
+        </div>
+        <div class="mz-pastMagazine">
+          <hr />
+          <h1>지난 매거진보기</h1>
+        </div>
+        <div class="mz-itemBox">
+          <div class="mz-item">
+            <a href="#"
+              ><img
+                src="https://image.thehyundai.com/static/image/sect/hnm/cpnt/hnmmain2216136020231027132144.jpg"
+                alt="mz-img6"
+            /></a>
+            <div class="mz-itemTxt">
+              <a href="#"><h1>자연 그대로의 아름다움을 찾아서</h1></a>
+              <a href="#"
+                ><p>천연 섬유 본연의 아름다움을 다루는 디자인 컬렉티브</p></a
+              >
+              <a href="#" class="mz-etc-a">더 보기</a>
+            </div>
+          </div>
+          <div class="mz-item">
+            <a href="#"
+              ><img
+                src="https://image.thehyundai.com/static/image/sect/hnm/cpnt/hnmmain2216135020231027132136.jpg"
+                alt="mz-img5"
+            /></a>
+            <div class="mz-itemTxt">
+              <a href="#"><h1>배우 윌 폴터가 말하는 사회적 책임감</h1></a>
+              <a href="#"
+                ><p>
+                  가디언즈 오브 갤럭시 3에 출연한 영국 배우 윌 폹터는 사람들에게
+                  긍정적인 영향을 주는 대화와 함께 있을 때의 즐거움에 대해
+                  이야기 합니다.
+                </p></a
+              >
+              <a href="#" class="mz-etc-a">더 보기</a>
+            </div>
+          </div>
+          <div class="mz-item">
+            <a href="#"
+              ><img
+                src="https://image.thehyundai.com/static/image/sect/hnm/cpnt/hnmmain22161350020231027092322.jpg"
+                alt="mz-img8"
+            /></a>
+            <div class="mz-itemTxt">
+              <a href="#"><h1>여성을 위한 여름 드레스 코드</h1></a>
+              <a href="#"
+                ><p>
+                  감각적인 실루엣, 다이내믹한 디테일, 모던한 분위기의 포멀 룩을
+                  큐레이팅했습니다.
+                </p></a
+              >
+              <a href="#" class="mz-etc-a">더 보기</a>
+            </div>
+          </div>
+          <div class="mz-item">
+            <a href="#"
+              ><img
+                src="https://image.thehyundai.com/static/image/sect/hnm/cpnt/hnmmain2216137020231027132151.jpg"
+                alt="mz-img7"
+            /></a>
+            <div class="mz-itemTxt">
+              <a href="#"><h1>계절의 변화와 함께할 여성 아웃핏</h1></a>
+              <a href="#"
+                ><p>
+                  다가오는 시즌에 맞춰 모던한 여성 아이템을 새롭게 선보입니다.
+                </p></a
+              >
+              <a href="#" class="mz-etc-a">더 보기</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- magazine끝 -->
+    <!-- 풋터 -->
+    <section class="footer-warp">
+      <article class="footer-service">
+        <div class="footer-service-inner">
+          <hr class="foot-line" />
+          <div class="footer-service-textbox">
+            <div class="footer-service-text">
+              <a href="" target="_self" class="a-link"> 고객 서비스 </a>
+              <a href="#" target="_self" class="a-link"> 매장 찾기 </a>
+              <a href="#" target="_self" class="a-link"> 배송 정보 </a>
+              <a href="#" target="_self" class="a-link"> 반품 및 환불 </a>
+              <a href="#" target="_self" class="a-link"> 결제 정보 </a>
+            </div>
+            <div class="footer-service-text">
+              <a href="#" target="_self" class="a-link"> 지속가능성 </a>
+              <a href="#" target="_self" class="a-link"> 협력업체 </a>
+              <a href="#" target="_self" class="a-link">
+                다양성 &amp; 포용성
+              </a>
+              <a href="#" target="_self" class="a-link"> COS By You </a>
+              <a href="#" target="_self" class="a-link"> 제품 관리 </a>
+              <a href="#" class="a-link" target="_blank"> 채용 정보 </a>
+              <a href="#" class="a-link" target="_blank"> 프레스 문의 </a>
+              <a href="#" target="_self" class="a-link"> 고객 문의 </a>
+            </div>
+            <div class="footer-service-text">
+              <a href="#" target="_blank" class="a-link"> Kakaotalk </a>
+              <a href="#" target="_blank" class="a-link"> Instagram </a>
+              <a href="#" target="_blank" class="a-link"> Facebook </a>
+              <a href="#" target="_blank" class="a-link"> Pinterest </a>
+              <a href="#" target="_blank" class="a-link"> Spotify </a>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="footer">
+        <div class="footer-section-inner">
+          <div class="footer-section footer-section1">
+            <div class="footer-txt-inner">
+              <p>
+                <a href="http://www.thehyundai.com" target="_blank"
+                  ><img
+                    id="hd_logo"
+                    src="https://image.thehyundai.com/cos_cdn/images/cos/02/footer_hyundai.png"
+                    alt="hd_logo"
+                /></a>
+              </p>
+            </div>
+          </div>
+          <div class="footer-section footer-section2">
+            <div class="footer-txt-linkinner">
+              <div class="footer-txt-inner">
+                <ul>
+                  <li>
+                    <a href="#" target="_self" class="tooter-underline">
+                      이용약관
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" target="_self" class="tooter-underline">
+                      <strong>개인정보처리방침</strong>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" target="_blank" class="tooter-underline"
+                      >현대백화점그룹</a
+                    >
+                  </li>
+                </ul>
+
+                <p>
+                  <span class="footer-txt-inner-cos"
+                    >COS 온라인 스토어는
+                    <br />
+                    <a href="#" target="_blank" class="tooter-underline"
+                      >더현대닷컴</a
+                    >
+                    을 이용하고 있습니다.
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="footer-section footer-section3">
+            <!-- 수정 -->
+            <div class="footer-txt-inner">
+              <div class="footer-txt-span">
+                <span>
+                  주식회사 현대백화점 대표이사 : 김형종 외 2인 서울시 강남구
+                  테헤란로98길 12 /
+                </span>
+              </div>
+              <div class="footer-txt-span">
+                <span>
+                  사업자등록번호 : 211-87-21455 [<a
+                    href="#"
+                    class="tooter-underline"
+                    >사업자정보 확인</a
+                  >]
+                </span>
+                <span> / </span>
+                <span>통신판매업신고 : 2010-서울강남-01882</span>
+                <span> / </span>
+              </div>
+              <div class="footer-txt-span">
+                <span>개인정보관리 및 청소년보호 책임자 :</span>
+                <span>회원운영관리담당 장근혁</span>
+                <span> / </span>
+                <span
+                  >홈페이지/앱 문의 :
+                  <a href="#" class="tooter-underline"
+                    >customerservice.kr@cos.com</a
+                  ></span
+                >
+                <span> / </span>
+              </div>
+              <div class="footer-txt-span">
+                <span>고객센터 : 1800-2765</span>
+                <span> / </span>
+                <span>호스팅서비스 : (주)현대백화점</span>
+                <span> / </span>
+              </div>
+              <div class="footer-txt-span">
+                <span
+                  >고객님의 안전거래를 위해 현금결제시 우리은행과
+                  채무지급보증계약을 체결하여 안전거래를 보장하고 있습니다.
+                </span>
+              </div>
+              <a class="tooter-underline">서비스 가입사실 확인</a>
+              <p>
+                <span>CopyrightⓒHyundai Department Store. </span>
+                <span>All rights reserved.</span>
+              </p>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </body>
+</html>
